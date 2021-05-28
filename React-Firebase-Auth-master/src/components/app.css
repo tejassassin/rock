@@ -1,0 +1,62 @@
+.signup {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  margin-left: 20%;
+}
+.leftside {
+  width: 20%;
+  background-color: lightgrey;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 2em;
+}
+
+.feed {
+  background-color: white;
+  width: 80%;
+}
+
+.navbar {
+  background-color: blanchedalmond;
+  position: sticky;
+  top: 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.post {
+    padding: 40px 40px 0 40px;
+    display: flex;
+}
+
+.img{
+    width: 100%;
+}
+
+.pleft{
+    width: 60%;
+    padding: 20px;
+    background-color: burlywood;
+ 
+}
+.pright{
+    width: 40%;
+    padding: 20px;
+    background-color: cornflowerblue;
+}
+
+.comments{
+    width: 100%;
+    padding: 0 40px 0 40px;
+
+}
