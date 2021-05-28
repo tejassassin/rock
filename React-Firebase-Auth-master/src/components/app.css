@@ -1,7 +1,14 @@
 .signup {
   width: 30%;
-  margin-left: auto;
-  margin-right: auto;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+    width: 100%;
 }
 
 .main {
@@ -26,37 +33,41 @@
 
 .navbar {
   background-color: blanchedalmond;
-  position: sticky;
+  position: absolute;
   top: 0;
+  right: 0;
   width: 80%;
   display: flex;
   justify-content: space-around;
-
 }
 
 .post {
-    padding: 40px 40px 0 40px;
-    display: flex;
+  padding: 40px 40px 0 40px;
+  display: flex;
 }
 
-.img{
-    width: 100%;
+.img {
+  width: 100%;
 }
 
-.pleft{
-    width: 60%;
-    padding: 20px;
-    background-color: burlywood;
- 
+.pleft {
+  width: 60%;
+  padding: 20px;
+  background-color: burlywood;
 }
-.pright{
-    width: 40%;
-    padding: 20px;
-    background-color: cornflowerblue;
+.pright {
+  width: 40%;
+  padding: 20px;
+  background-color: cornflowerblue;
 }
 
-.comments{
-    width: 100%;
-    padding: 0 40px 0 40px;
-
+.comments {
+  width: 100%;
+  padding: 0 40px 0 40px;
 }
+
+.select {
+  display: flex;
+  justify-content: space-between;
+}
+
