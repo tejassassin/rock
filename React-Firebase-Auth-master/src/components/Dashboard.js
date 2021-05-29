@@ -33,38 +33,38 @@ export default function Dashboard() {
   </Card> */
   }
   return (
-    <div>
+    <div style={{ position: "relative", overflow: "none" }}>
       <div className="leftside">
-        <ul>
-          <li>
-            <a href="#">provide food</a>
-          </li>
-          <li>
-            <a href="#">provide food</a>
-          </li>
-          <li>
-            <a href="#">provide food</a>
-          </li>
-        </ul>
+        <p>
+          <a href="/providefood">Provide food</a>
+        </p>
+        <p>
+          <a href="#">Account</a>
+        </p>
+        {/* <p>
+          <a href="#">provide food</a>
+        </p> */}
       </div>
 
-      <div className="main">
-        <div className="navbar">
-          <div>dashboard</div>
-
-          <div className="search-container">
-            <form action="">
-              <input type="text" placeholder="Search.." name="search"></input>
-              <button type="submit">Search</button>
-            </form>
-          </div>
-
-          <Button variant="link" onClick={handleLogout}>
-            Log Out
-          </Button>
+      <div className="navbar">
+        <div>
+          <form className="search-container">
+            <input type="text" placeholder="Search.." name="search"></input>
+            <button type="submit">Search</button>
+          </form>
         </div>
+
+        <Button id="logout" variant="link" onClick={handleLogout}>
+          Log Out
+        </Button>
       </div>
-      <div className="main">
+
+      <div
+        className="main"
+        style={{
+          overflowY: "scroll",
+        }}
+      >
         <div className="feed">
           <Post />
           <Post />

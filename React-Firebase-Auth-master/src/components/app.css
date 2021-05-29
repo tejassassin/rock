@@ -1,3 +1,13 @@
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+overflow-x: hidden;
+
+}
+
 .signup {
   width: 30%;
   height: 100vh;
@@ -7,18 +17,20 @@
   align-items: center;
 }
 
-.card{
-    width: 100%;
+.card {
+  width: 100%;
 }
 
 .main {
   display: flex;
   width: 100%;
   margin-left: 20%;
+  margin-left: 20%;
+margin-top: 40px;
 }
 .leftside {
   width: 20%;
-  background-color: lightgrey;
+  background-color: #EAE7DC;
   height: 100vh;
   position: fixed;
   left: 0;
@@ -26,48 +38,97 @@
   padding: 2em;
 }
 
+.leftside p{
+  margin: 0;
+  border-radius: 10px;
+  margin:0.5em 0;
+padding: 1em 0.8em;
+background-color: white;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: none !important;
+
+}
+
+
+
 .feed {
   background-color: white;
   width: 80%;
 }
 
 .navbar {
-  background-color: blanchedalmond;
-  position: absolute;
+  background-color: #e98074;
+  border-bottom: 1px solid white;
+z-index:2;
+  color: white;
+  position: fixed !important;
   top: 0;
   right: 0;
   width: 80%;
   display: flex;
   justify-content: space-around;
+  margin-left: 20%;
 }
 
-.post {
-  padding: 40px 40px 0 40px;
-  display: flex;
+#logout {
+  color: #e98074;
+  text-decoration: none;
+  padding: 0.3em 0.7em;
+  background-color: white;
+
+  
 }
 
-.img {
-  width: 100%;
-}
+#logout:hover{
+  color:white;
+  background-color: #e98074;
+  border:1px solid white;
 
-.pleft {
-  width: 60%;
-  padding: 20px;
-  background-color: burlywood;
-}
-.pright {
-  width: 40%;
-  padding: 20px;
-  background-color: cornflowerblue;
-}
 
-.comments {
-  width: 100%;
-  padding: 0 40px 0 40px;
 }
 
 .select {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
+.search-container {
+  display: flex;
+  margin-left: 1.7em;
+  width: 595px;
+}
+.search-container input {
+  width: 100%;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  border:none;
+  padding: 0.4em;
+}
+
+.search-container button {
+  border-radius: 0 5px 5px 0;
+  border:none;
+  background-color: rgb(236, 144, 159);
+  text-decoration: none;
+  padding: 0.3em 0.7em;
+  color: white;
+  border: 1px solid white;
+
+}
+.search-container button:hover {
+  color: white;
+  background-color: pink;
+  border: 1px solid white;
+
+}
+
+p {
+  text-wrap: wrap;
+}

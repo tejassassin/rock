@@ -15,31 +15,29 @@ export default function Signup() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    if (passwordRef.current.value !== passwordConfirmRef.current.value) {
-      return setError("Passwords do not match");
-    }
+    // if (passwordRef.current.value !== passwordConfirmRef.current.value) {
+    //   return setError("Passwords do not match");
+    // }
 
-    try {
-      setError("");
-      setLoading(true);
-      await signup(emailRef.current.value, passwordRef.current.value);
-      history.push("/");
-    } catch {
-      if (passwordRef.current.value.length <= 5) {
-        setError("Password should be atleast 6 characters");
-        console.log("hii");
-      } else {
-        setError("Failed to create an account");
-      }
-    }
+    // try {
+    //   setError("");
+    //   setLoading(true);
+    //   await signup(emailRef.current.value, passwordRef.current.value);
+    //   history.push("/");
+    // } catch {
+    //   if (passwordRef.current.value.length <= 5) {
+    //     setError("Password should be atleast 6 characters");
+    //     console.log("hii");
+    //   } else {
+    //     setError("Failed to create an account");
+    //   }
+    // }
 
-    setLoading(false);
+    // setLoading(false);
   }
 
   return (
-    <div
-    className="signup"
-    >
+    <div className="signup">
       <Card className="card">
         <Card.Body>
           <h2 className="text-center mb-4">Sign Up</h2>
@@ -60,24 +58,33 @@ export default function Signup() {
             </Form.Group>
 
             <Form.Group id="password">
-              <div className="select"> 
+              <div className="select">
                 <Form.Label>Account type</Form.Label>
                 <div>
-                  <select name="cars" id="cars">
+                  <select style={{ 
+                    width: "100px",
+                    padding:"0.1em",
+                    backgroundColor:"white",
+                     outline:"none" }} name="cars" id="cars">
                     <option value="volvo">Cook</option>
                     <option value="saab">patient</option>
                   </select>
                 </div>
               </div>
             </Form.Group>
+            
+            <a href="/">
+
             <Button disabled={loading} className="w-100" type="submit">
               Sign Up
             </Button>
+            </a>
           </Form>
         </Card.Body>
         <div className="w-100 text-center mt-2">
           Already have an account? <Link to="/login">Log In</Link>
         </div>
+      <br />
       </Card>
     </div>
   );

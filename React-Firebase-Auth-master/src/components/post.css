@@ -1,0 +1,33 @@
+.post {
+    padding: 40px 40px 0 40px;
+    display: flex;
+}
+
+.img {
+    width: 100%;
+    transition: 0.3s;
+}
+img:hover{
+    transform: scale(1.05);
+
+}
+
+.pleft {
+      border-radius: 30px 0 0 30px;
+    width: 60%;
+    padding: 20px;
+    background-color: #e98074;
+    color:white;
+  }
+  .pright {
+    border-radius: 0 30px 30px 0;
+
+    width: 40%;
+    padding: 20px;
+    background-color: #eae7dc;
+  }
+  
+  .comments {
+    width: 100%;
+    padding: 0 40px 0 40px;
+  }
